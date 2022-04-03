@@ -1,0 +1,108 @@
+html {
+  --color--skybule: rgb(22, 211, 228);
+}
+
+body {
+  background: linear-gradient(0deg, rgb(216, 255, 249), rgb(226, 250, 252));
+  color: rgb(68, 68, 68);
+}
+
+header {
+  position: static;
+}
+
+main ul {
+  width: 75rem;
+  margin: 0 auto 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.25rem;
+}
+
+li:nth-of-type(1) {
+  grid-column: 1 / span 2;
+}
+
+li:nth-of-type(6) {
+  grid-column: 1 / span 2;
+}
+
+li:nth-of-type(11) {
+  grid-column: 1 / span 2;
+}
+
+li:nth-of-type(16) {
+  grid-column: 1 / span 2;
+}
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+main li img {
+  width: 17.5rem;
+  height: 17.5rem;
+  object-fit: cover;
+}
+
+.item-content {
+  padding: 0px 1rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-content p {
+  font-size: 1rem;
+}
+
+.item-content h2 {
+  font-size: 1.25rem;
+  padding: 0px;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--color--skybule);
+}
+
+.actions a:hover {
+  background-color: rgb(235, 253, 255);
+  border-radius: 6px;
+}
+
+footer {
+  background-color: rgb(140, 245, 243);
+}
+
+@media (max-width: 75rem) {
+  main ul {
+    width: 90%;
+  }
+  main ul li {
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (max-width: 50rem) {
+  main ul {
+    width: 90%;
+  }
+  main li {
+    flex-wrap: wrap;
+    grid-column: 1 / span 2;
+  }
+
+  main li img {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+  }
+}

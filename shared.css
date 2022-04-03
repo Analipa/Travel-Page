@@ -1,0 +1,98 @@
+html {
+  --color-skyblue: rgb(22, 211, 228);
+  --color-beige: rgb(245, 243, 160);
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3.75rem;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#page-logo a {
+  padding: 0.625rem;
+  font-family: "Oleo script", sans-serif;
+  color: var(--color-beige);
+  font-size: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+#page-logo a:hover {
+  color: var(--color-skyblue);
+}
+header ul {
+  display: flex;
+}
+
+header li {
+  margin: 1.5rem;
+}
+header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.75rem;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+header ul a {
+  color: rgb(0, 0, 0);
+  background-color: var(--color-beige);
+}
+
+header ul a:hover {
+  color: rgb(0, 0, 0);
+  background-color: var(--color-skyblue);
+}
+
+footer {
+  background: rgb(114, 216, 191);
+  padding: 0.75rem 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 3rem;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
+footer img:hover {
+  transform: translateY(3px);
+}
+@media (max-width: 50rem) {
+  #page-logo a {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+
+  header ul a {
+    display: none;
+  }
+}
